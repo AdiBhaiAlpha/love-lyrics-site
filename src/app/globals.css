@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #080808;
+  --foreground: #e4e4e4;
+  --primary: #9b4dff;
+  --secondary: #c026d3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(155, 77, 255, 0.35);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #9b4dff, #c026d3);
+  border-radius: 8px;
+}
